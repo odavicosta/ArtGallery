@@ -14,4 +14,8 @@ public interface IArtGallery {
     Vector<Obra> buscarPorAutor(String autor);
     Vector<Obra> topObras();
     Vector<Obra> obrasExpostas(String nomeExposicao);
+    
+    void criarExposicao(String nome);
+    void adicionarObraAExposicao(String nomeExposicao, String tituloObra) throws ObraNaoEncontradaException;
+    Vector<String> listarNomesExposicoes();
 }

@@ -1,8 +1,10 @@
 package artgallery.model;
 
 import artgallery.exception.NotaInvalidaException;
+import java.io.Serializable;
 
-public class Avaliacao {
+public class Avaliacao implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String usuario;
     private int nota;
     private String comentario;

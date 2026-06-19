@@ -1,8 +1,10 @@
 package artgallery.model;
 
+import java.io.Serializable;
 import java.util.Vector;
 
-public class Exposicao {
+public class Exposicao implements Serializable {
+    private static final long serialVersionUID = 1L;
 	private String nome;
 	private Vector<Obra> obras;
 	
